@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Models\Entities\Locales\" />
+    <None Remove="Models\Entities\RolesGen\" />
+    <None Remove="Enums\" />
+    <None Remove="Enums\Permissions\" />
+    <None Remove="Models\Entities\Skills\" />
+    <None Remove="Models\Entities\Media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Entities\Locales\" />
+    <Folder Include="Models\Entities\RolesGen\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Enums\Permissions\" />
+    <Folder Include="Models\Entities\Skills\" />
+    <Folder Include="Models\Entities\Media\" />
+  </ItemGroup>
+</Project>
