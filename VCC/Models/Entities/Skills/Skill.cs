@@ -1,5 +1,4 @@
-﻿using System;
-namespace VCC.Models.Entities.Skills
+﻿namespace VCC.Models.Entities.Skills
 {
 	public class Skill
 	{
